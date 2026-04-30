@@ -1,6 +1,6 @@
 # Laravel Alice
 
-YAML-based fixture loading for Laravel, powered by [nelmio/alice](https://github.com/nelmio/alice) and [theofidry/alice-data-fixtures](https://github.com/theofidry/AliceDataFixtures). Same DX as [hautelook/AliceBundle](https://github.com/hautelook/AliceBundle) for Symfony.
+YAML-based fixture loading for Laravel, powered by [nelmio/alice](https://github.com/nelmio/alice) and [theofidry/alice-data-fixtures](https://github.com/theofidry/AliceDataFixtures).
 
 ## Requirements
 
