@@ -1,0 +1,13 @@
+Kulturman\LaravelAlice\Tests\Models\Company:
+    company_acme:
+        name: "Acme Corp"
+
+Kulturman\LaravelAlice\Tests\Models\User:
+    user_john:
+        name: "John Doe"
+        email: "john@example.com"
+        company_id: 1
+    user_jane:
+        name: "Jane Doe"
+        email: "jane@example.com"
+        company_id: 1

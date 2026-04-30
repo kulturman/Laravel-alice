@@ -1,0 +1,3 @@
+Kulturman\LaravelAlice\Tests\Models\Company:
+    company_{1..3}:
+        name: "<company()>"
