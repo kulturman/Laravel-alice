@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "nelmio/alice": "^3.17",
         "theofidry/alice-data-fixtures": "^1.11",
         "illuminate/console": "^11.0|^12.0",
