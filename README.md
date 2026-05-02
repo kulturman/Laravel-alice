@@ -4,7 +4,7 @@ YAML-based fixture loading for Laravel, powered by [nelmio/alice](https://github
 
 ## Requirements
 
-- PHP 8.4+
+- PHP 8.3+
 - Laravel 11+
 
 ## Installation
