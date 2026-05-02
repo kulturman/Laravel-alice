@@ -86,7 +86,38 @@ php artisan alice:fixtures:load --no-interaction
 
 ### In Tests
 
-Use the `UseFixtures` trait to load fixtures in your test cases:
+Two traits are available depending on how much control you need:
+
+#### `WithFixtures` — automatic loading
+
+Fixtures are loaded automatically before each test. Global fixtures from the configured path are always loaded, and a per-test fixture file is loaded if it exists next to the test class (e.g. `OrderTest.yaml` alongside `OrderTest.php`).
+
+```php
+use Kulturman\LaravelAlice\Testing\WithFixtures;
+
+class OrderTest extends TestCase
+{
+    use RefreshDatabase, WithFixtures;
+
+    public function test_order_total(): void
+    {
+        // $this->fixtures contains all persisted models
+        // Global fixtures + OrderTest.yaml (if it exists) are already loaded
+    }
+}
+```
+
+```yaml
+# tests/OrderTest.yaml — loaded only for OrderTest
+App\Models\Order:
+    order_1:
+        user_id: 1
+        total: 150
+```
+
+#### `UseFixtures` — manual loading
+
+For fine-grained control, use `UseFixtures` and call `loadFixtures()` explicitly:
 
 ```php
 use Kulturman\LaravelAlice\Testing\UseFixtures;
