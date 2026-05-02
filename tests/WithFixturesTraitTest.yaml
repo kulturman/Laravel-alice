@@ -1,0 +1,4 @@
+Kulturman\LaravelAlice\Tests\Models\User:
+    user_extra:
+        name: "Extra User"
+        email: "extra@example.com"
